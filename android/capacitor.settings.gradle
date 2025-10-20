@@ -1,0 +1,2 @@
+include ':capacitor-native-geocoder'
+project(':capacitor-native-geocoder').projectDir = new File('../node_modules/capacitor-native-geocoder/android')

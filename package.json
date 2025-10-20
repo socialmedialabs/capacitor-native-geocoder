@@ -1,0 +1,51 @@
+{
+  "name": "capacitor-native-geocoder",
+  "version": "2.0.0",
+  "description": "Native geocoding for Capacitor 7 (SDK 34-ready)",
+  "main": "dist/plugin.cjs.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "files": [
+    "CapacitorNativeGeocoder.podspec",
+    "CHANGELOG.md",
+    "dist",
+    "src",
+    "ios",
+    "android/src",
+    "android/gradle",
+    "android/build.gradle.kts",
+    "android/settings.gradle.kts",
+    "android/gradle.properties",
+    "android/consumer-rules.pro",
+    "android/capacitor.settings.gradle",
+    "android/gradlew",
+    "android/gradlew.bat",
+    "LICENSE",
+    "README.md",
+    "rollup.config.mjs",
+    "tsconfig.json"
+  ],
+  "scripts": {
+    "clean": "node -e \"try{require('fs').rmSync('dist',{recursive:true,force:true});}catch(_){}\"",
+    "build": "npm run clean && tsc && rollup -c rollup.config.mjs",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@capacitor/core": "^7.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "rollup": "^4.0.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-typescript": "^11.1.6"
+  },
+  "capacitor": {
+    "ios": {
+      "src": "ios"
+    },
+    "android": {
+      "src": "android"
+    }
+  }
+}
