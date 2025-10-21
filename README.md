@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/@socialmedialabs/capacitor-native-geocoder.svg)](https://www.npmjs.com/package/@socialmedialabs/capacitor-native-geocoder)
 [![npm downloads](https://img.shields.io/npm/dm/@socialmedialabs/capacitor-native-geocoder.svg)](https://www.npmjs.com/package/@socialmedialabs/capacitor-native-geocoder)
-[![license](https://img.shields.io/npm/l/@socialmedialabs/capacitor-native-geocoder.svg)](./LICENSE)
+[![license](https://img.shields.io/github/license/socialmedialabs/capacitor-native-geocoder)](./LICENSE)
 [![platforms](https://img.shields.io/badge/platforms-iOS%2015%2B%20%7C%20Android%2034%2B-green)](#)
 
 Native geocoding (Apple CLGeocoder / Android `android.location.Geocoder`) for Capacitor 7.
