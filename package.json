@@ -47,5 +47,6 @@
     "android": {
       "src": "android"
     }
-  }
+  },
+  "license": "MIT"
 }
