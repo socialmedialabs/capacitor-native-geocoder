@@ -10,7 +10,8 @@ xcuserdata
 # macOS files
 .DS_Store
 
-
+.package-lock.json
+.npm-debug.log
 
 android/.settings/
 # Based on Android gitignore template: https://github.com/github/gitignore/blob/HEAD/Android.gitignore
