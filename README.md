@@ -1,5 +1,10 @@
 # capacitor-native-geocoder
 
+[![npm version](https://img.shields.io/npm/v/@socialmedialabs/capacitor-native-geocoder.svg)](https://www.npmjs.com/package/@socialmedialabs/capacitor-native-geocoder)
+[![npm downloads](https://img.shields.io/npm/dm/@socialmedialabs/capacitor-native-geocoder.svg)](https://www.npmjs.com/package/@socialmedialabs/capacitor-native-geocoder)
+[![license](https://img.shields.io/npm/l/@socialmedialabs/capacitor-native-geocoder.svg)](./LICENSE)
+[![platforms](https://img.shields.io/badge/platforms-iOS%2015%2B%20%7C%20Android%2034%2B-green)](#)
+
 Native geocoding (Apple CLGeocoder / Android `android.location.Geocoder`) for Capacitor 7.
 
 - ✅ Capacitor 7 compatible (`@capacitor/core` peer dependency)
@@ -12,14 +17,25 @@ Native geocoding (Apple CLGeocoder / Android `android.location.Geocoder`) for Ca
 ## Installation
 
 ```bash
-npm install capacitor-native-geocoder
-# or: npm install file:../capacitor-native-geocoder
+npm install @socialmedialabs/capacitor-native-geocoder
 ```
 
 Then sync native platforms:
 
 ```bash
 npx cap sync
+```
+
+## Quick Start
+
+```ts
+import { NativeGeocoder } from '@socialmedialabs/capacitor-native-geocoder';
+
+const { results } = await NativeGeocoder.forwardGeocode({
+  address: 'Brandenburg Gate, Berlin',
+  maxResults: 3,
+});
+console.log(results);
 ```
 
 ### Android
